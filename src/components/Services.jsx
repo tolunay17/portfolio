@@ -5,23 +5,23 @@ import uiDesignerImage from '../assets/ui.png';
 
 const ServiceCard = ({ icon, title, details, image }) => {
   return (
-    <div className="w-full px-4 md:w-1/2  object-center lg:w-1/3">
-      <div className=" object-center mb-8 rounded-lg bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
-        <div className=" mb-12 flex p-3 items-center justify-center rounded-full bg-primary">
-          <img className="hover:object-top w-40" src={image} alt="" />
-          
+        <div className="max-w-[1040px] px-4 md:w-1/2 lg:w-1/3">
+          <div className=" object-center mb-8 rounded-lg bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
+            <div className=" mb-12 flex p-3 items-center justify-center rounded-full bg-primary">
+              <img className="hover:object-top w-40" src={image} alt="" />
+              
+            </div>
+            {icon}
+            <h4 className="mb-3 text-xl font-semibold text-dark">{title}</h4>
+            <p className="text-body-color">{details}</p>
+          </div>
         </div>
-        {icon}
-        <h4 className="mb-3 text-xl font-semibold text-dark">{title}</h4>
-        <p className="text-body-color">{details}</p>
-      </div>
-    </div>
   );
 };
 
 const Services = () => {
   return (
-    <div id="service" className="max-w-screen-xl mx-auto md:pl-20 p-4 py-16">
+    <div id='services' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
       <h1 className="py-8 text-4xl font-bold text-center text-[#000]">Services</h1>
       <div className="container">
         <div className="flex flex-wrap -mx-4">

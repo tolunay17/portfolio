@@ -1,14 +1,15 @@
 import React from 'react';
 import webDesignerImage from '../assets/design.png';
-import developerImage from '../assets/developer.png';
+import developerImage from '../assets/frontend.png';
 import uiDesignerImage from '../assets/ui.png';
 
 const ServiceCard = ({ icon, title, details, image }) => {
   return (
-    <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-      <div className="mb-8 rounded-lg bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
-        <div className="mb-12 flex h-40 w-40 p-3 items-center justify-center rounded-full bg-primary">
-          <img className="w-20" src={image} alt="" />
+    <div className="w-full px-4 md:w-1/2  object-center lg:w-1/3">
+      <div className=" object-center mb-8 rounded-lg bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
+        <div className=" mb-12 flex p-3 items-center justify-center rounded-full bg-primary">
+          <img className="hover:object-top w-40" src={image} alt="" />
+          
         </div>
         {icon}
         <h4 className="mb-3 text-xl font-semibold text-dark">{title}</h4>

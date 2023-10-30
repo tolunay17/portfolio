@@ -7,7 +7,7 @@ const ServiceCard = ({ icon, title, details }) => {
             <div
               className={`mb-12 flex h-[40px] w-[8] p-3 items-center justify-center rounded-2xl bg-primary`}
             >
-              <img className="w-10" src="../../src/assets/design.png" alt="" />
+              <img className="w-20" src="../../src/assets/design.png" alt="" />
               {icon}
             </div>
             <h4 className="mb-3 text-xl font-semibold text-dark">{title}</h4>
@@ -19,7 +19,7 @@ const ServiceCard = ({ icon, title, details }) => {
   };
   
 
-const Service = () => {
+const Services = () => {
   return (
     <div id='service' className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
     <h1 className='py-8 text-4xl font-bold text-center text-[#000]'>Services</h1>
@@ -54,4 +54,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default Services;

@@ -27,9 +27,15 @@ const Main = () => {
                 repeat={Infinity}
             /></h2>
             <div className='flex justify-between pt-6 max-w-[200px] w-full'>
-                <FaTwitter className='cursor-pointer' size={20}/>
-                <FaGithub className='cursor-pointer' size={20}/>
-                <FaLinkedin className='cursor-pointer' size={20}/>
+                <a  href="https://twitter.com/tolunay_kutlu17" target="_blank">
+                    <FaTwitter className='cursor-pointer' size={20}/>
+                </a>
+                <a href="https://github.com/tolunay17"  target="_blank">
+                    <FaGithub className='cursor-pointer' size={20}/>
+                </a>
+                <a href="https://www.linkedin.com/in/tolunay-kutlu-6094461b7"  target="_blank">
+                    <FaLinkedin className='cursor-pointer' size={20}/>
+                </a>
             </div>
         </div>
         </div>

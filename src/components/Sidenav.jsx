@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {AiOutlineHome, AiOutlineMenu, AiOutlineProject, AiOutlineMail} from 'react-icons/ai'; 
+import {AiOutlineHome, AiOutlineMenu, AiOutlineMail, AiOutlineCustomerService} from 'react-icons/ai'; 
 import { BsPerson } from 'react-icons/bs';
 import { GrProjects } from 'react-icons/gr';
 
@@ -20,20 +20,20 @@ const SideNav = () => {
               <AiOutlineHome size={20}/>
               <span className='pl-4'>Home</span>
             </a>
-            <a onClick={handleNav}
-             href='#work' className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200'>
-              <GrProjects size={20}/>
-              <span className='pl-4'>Work</span>
-            </a>
             <a onClick={handleNav} 
             href='#projects' className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200'>
-              <AiOutlineProject size={20}/>
+              <GrProjects size={20}/>
               <span className='pl-4'>Projects</span>
             </a>
             <a onClick={handleNav} 
             href='#skills' className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200'>
               <BsPerson size={20}/>
               <span className='pl-4'>Skills</span>
+            </a>
+            <a onClick={handleNav} 
+            href='#services' className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200'>
+              <AiOutlineCustomerService size={20}/>
+              <span className='pl-4'>Services</span>
             </a>
             <a onClick={handleNav}
              href='#contact' className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-200'>
@@ -48,27 +48,27 @@ const SideNav = () => {
         <ul className='md:block hidden fixed top-[10%] z-10'>
           <li className='flex flex-col'>
             <a href="#main" className='rounded-full shadow-lg bg-grey-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300'>
-              <AiOutlineHome size={25}/>
+              <AiOutlineHome size={20}/>
             </a>
           </li>
           <li className='flex flex-col'>
             <a href="#projects" className='rounded-full shadow-lg bg-grey-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300'>
-              <GrProjects size={25}/>
-            </a>
-          </li>
-          <li className='flex flex-col'>
-            <a href="#project" className='rounded-full shadow-lg bg-grey-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300'>
-              <AiOutlineProject size={25}/>
+              <GrProjects size={20}/>
             </a>
           </li>
           <li className='flex flex-col'>
             <a href="#skills" className='rounded-full shadow-lg bg-grey-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300'>
-              <BsPerson size={25}/>
+              <BsPerson size={20}/>
+            </a>
+          </li>
+          <li className='flex flex-col'>
+            <a href="#services" className='rounded-full shadow-lg bg-grey-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <AiOutlineCustomerService size={20}/>
             </a>
           </li>
           <li className='flex flex-col'>
             <a href="#contact" className='rounded-full shadow-lg bg-grey-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300'>
-              <AiOutlineMail size={25}/>
+              <AiOutlineMail size={20}/>
             </a>
           </li>
         </ul>
